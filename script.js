@@ -60,7 +60,7 @@ function reverseArrayInPlace(array) {
         let left = i;
         let right = array.length - 1 - i;
         
-        let temp = left;
+        let temp = array[left];
         array[left] = array[right];
         array[right] = temp;
 
