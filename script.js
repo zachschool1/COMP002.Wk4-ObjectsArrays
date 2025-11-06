@@ -55,14 +55,16 @@ let arrayValue = [1, 2, 3, 4, 5];
 //ive done something like this before, but i dont remember. basically use a temp variable to swap first and last, then on next iteration of loop, do it for 2nd and 4th digit. my instinct is to set a left variable, a right variable, and a temp variable. then do like left is array[0] right is array[array.length-1] and it will increment left but decrement right and if left == right it means its in the middle? maybe? im not sure how that would work for even number of ints in array
 
 function reverseArrayInPlace(array) {
-    let left = array[0];
-    let right = array[array.length - 1];
-    let temp;
     //since im working from outside in and doing 2 things per iteration i only need to do half of the array
-    for(let i = 0; i < array.length / 2; i++){
-        temp = left;
-        right = left;
-        left = temp;
+    for(let i = 0; i < Math.floor(array.length / 2); i++){
+        let left = array[i];
+        let right = array[array.length - 1 - i];
+        
+        let temp = left;
+        array[left] = array[right];
+        array[right] = temp;
+
+
     }
 
 }
