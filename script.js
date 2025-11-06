@@ -56,9 +56,9 @@ let arrayValue = [1, 2, 3, 4, 5];
 
 function reverseArrayInPlace(array) {
     //since im working from outside in and doing 2 things per iteration i only need to do half of the array
-    for(let i = 0; i < Math.floor(array.length / 2); i++){
-        let left = array[i];
-        let right = array[array.length - 1 - i];
+    for(let i = 0; i <= array.length / 2; i++){
+        let left = i;
+        let right = array.length - 1 - i;
         
         let temp = left;
         array[left] = array[right];
