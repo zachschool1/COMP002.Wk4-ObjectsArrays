@@ -3,6 +3,14 @@
 // Example output:
 // console.log(range(1, 10)); // outputs [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
+function range(start,end) {
+    for(let i = start; i <= end; i++) {
+        console.log(i);
+    }
+}
+
+range(1,10);
+
 // 2. Next, write a sum function that takes an array of numbers and returns the sum of
 // these numbers. Run the example program and see whether it does indeed return 55.
 // Example output:
