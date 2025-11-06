@@ -63,12 +63,8 @@ function reverseArrayInPlace(array) {
         let temp = array[left];
         array[left] = array[right];
         array[right] = temp;
-
-
     }
-
 }
-
 reverseArrayInPlace(arrayValue);
 console.log(arrayValue); // outputs [5, 4, 3, 2, 1]
 
